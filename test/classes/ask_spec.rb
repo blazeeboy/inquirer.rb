@@ -2,7 +2,7 @@
 require 'minitest_helper'
 
 describe Ask do
-  %i[list checkbox input confirm].each do |method|
+  %w[list checkbox input confirm].each do |method|
     it "respond to #{method} method" do
       Ask.method_defined?(method).must_equal true
     end
